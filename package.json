@@ -1,8 +1,8 @@
 {
   "name": "v_tool",
-  "description": "Will setup and run dev env.",
-  "version": "0.0.0",
-  "author": "Slavko_V @V-tech-tools-web-dev",
+  "description": "V_Tool CLI for easier life and better development. \n ⩤⮓᚜⩔≜⧌᚛⮒⩥ \n Here to help with setup, run developer environment and help during development. \n Installing, configuring, running, reporting...generating code, sample structures.",
+  "version": "1.0.1",
+  "author": "[_.V._] @V-tech-tools-web-dev",
   "bin": {
     "v_tool": "./bin/run"
   },
