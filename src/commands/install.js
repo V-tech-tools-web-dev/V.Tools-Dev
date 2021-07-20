@@ -8,22 +8,30 @@ function bashDo(inputCommand = '') {
       console.error(err)
     } else {
       // the *entire* stdout and stderr (buffered)
-      console.log(`stdout: ${stdout}`)
-      console.log(`stderr: ${stderr}`)
+      if (stdout !== "") {
+        console.log(stdout) 
+      } else { 
+        //console.log(`stdout is empty`) 
+      }
+      if (stderr !== ""){
+        console.log(`stderr: ${stderr}`)
+      }else{
+        //console.log(`stderr is empty`)
+      }
     }
   })
 }
 class InstallCommand extends Command {
   async run() {
     const { flags } = this.parse(InstallCommand)
-    const name = flags.name || 'world'
-    this.log(
+    const name = flags.name || 'null'
+    /*this.log(
       `hello ${name} from C:\\Users\\slavk\\V.Tools-DevSetup\\src\\commands\\install.js`
     )
     bashDo('PWD')
-    bashDo('echo "YEAAAA" ')
-    bashDo('ls -al')
-    bashDo('echo $PWD && cd .. && echo $PWD')
+    bashDo('echo "YEAAAA" ')*/
+    bashDo('start bash -c "echo $PWD; sleep 5s;"')
+    //bashDo('start bash -c "echo $PWD && cd .. && echo $PWD"')
   }
 }
 
@@ -33,7 +41,7 @@ Extra documentation goes here
 `
 
 InstallCommand.flags = {
-  name: flags.string({ char: 'n', description: 'name to print' }),
+  tips: flags.string({ char: 't', description: 'print tips about install command' }),
 }
 
 module.exports = InstallCommand
