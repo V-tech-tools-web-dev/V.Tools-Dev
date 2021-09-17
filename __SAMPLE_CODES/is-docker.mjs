@@ -3,10 +3,10 @@
 
 import isDocker from "is-docker";
 
-let isDockerVal = new isDocker();
-
-if (isDockerVal) {
+if (isDocker()) {
   console.log("Running inside a Docker container");
+} else {
+  console.log("NOT _>- Running inside a Docker container");
 }
 
-//==============[bad]=============
+//==============[GOOD]=============
