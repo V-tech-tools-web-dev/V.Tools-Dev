@@ -20,6 +20,18 @@
   },
   "homepage": "https://github.com/V-tech-tools/V.Tools-Dev#readme",
   "dependencies": {
-    "open": "^8.2.1"
+    "boxen": "^5.1.1",
+    "cross-pwd": "^1.0.4",
+    "enquirer": "^2.3.6",
+    "ervy": "^1.0.7",
+    "is-hidden-file": "^1.1.2",
+    "lock-your-windows": "0.0.1",
+    "open": "^8.2.1",
+    "open-graph-scraper": "^4.9.2",
+    "systray": "^1.0.5",
+    "wallpaper": "^5.0.1",
+    "windows-active-process": "^1.1.1",
+    "windows-trayicon": "^3.0.0",
+    "yargs-parser": "^20.2.9"
   }
 }
