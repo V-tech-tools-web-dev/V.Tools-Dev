@@ -27,6 +27,7 @@
     "cli-width": "^3.0.0",
     "cliui": "^7.0.4",
     "cross-pwd": "^1.0.4",
+    "desktop-hotkeys": "^1.5.4",
     "enquirer": "^2.3.6",
     "ervy": "^1.0.7",
     "is-docker": "^3.0.0",
