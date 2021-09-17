@@ -1,26 +1,25 @@
 // https://www.npmjs.com/package/enquirer#snippet-prompt
 
-
-const semver = require('semver');
-const { Snippet } = require('enquirer');
+const semver = require("semver");
+const { Snippet } = require("enquirer");
 const prompt = new Snippet({
-  name: 'username',
-  message: 'Fill out the fields in package.json',
+  name: "username",
+  message: "Fill out the fields in package.json",
   required: true,
   fields: [
     {
-      name: 'author_name',
-      message: 'Author Name'
+      name: "author_name",
+      message: "Author Name",
     },
     {
-      name: 'version',
+      name: "version",
       validate(value, state, item, index) {
-        if (item && item.name === 'version' && !semver.valid(value)) {
-          return prompt.styles.danger('version should be a valid semver value');
+        if (item && item.name === "version" && !semver.valid(value)) {
+          return prompt.styles.danger("version should be a valid semver value");
         }
         return true;
-      }
-    }
+      },
+    },
   ],
   template: `{
   "name": "\${name}",
@@ -31,9 +30,12 @@ const prompt = new Snippet({
   "repository": "\${username}/\${name}",
   "license": "\${license:ISC}"
 }
-`
+`,
 });
- 
-prompt.run()
-  .then(answer => console.log('Answer:', answer.result))
+
+prompt
+  .run()
+  .then((answer) => console.log("Answer:", answer.result))
   .catch(console.error);
+
+//==============[GOOD]=============

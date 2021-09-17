@@ -21,6 +21,7 @@
   "homepage": "https://github.com/V-tech-tools/V.Tools-Dev#readme",
   "dependencies": {
     "boxen": "^5.1.1",
+    "cli-width": "^3.0.0",
     "cross-pwd": "^1.0.4",
     "enquirer": "^2.3.6",
     "ervy": "^1.0.7",
