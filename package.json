@@ -2,7 +2,10 @@
   "name": "vguard",
   "version": "1.0.1",
   "description": "",
-  "main": "vguard_root.js",
+  "main": "bin/vguard.js",
+  "bin": {
+    "vgd": "./bin/vguard.js"
+  },
   "scripts": {
     "test": "test"
   },
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/V-tech-tools/V.Tools-Dev/issues"
   },
-  "homepage": "https://github.com/V-tech-tools/V.Tools-Dev#readme"
+  "homepage": "https://github.com/V-tech-tools/V.Tools-Dev#readme",
+  "dependencies": {
+    "open": "^8.2.1"
+  }
 }
